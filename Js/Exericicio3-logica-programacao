@@ -1,0 +1,25 @@
+let media = somarNota(10, 3, 7);
+let resultado = aprovacao();
+let maiorNota;
+
+function somarNota(nota1, nota2, nota3) {
+    return (nota1 + nota2 + nota3) / 3
+};
+
+function aprovacao(resultado){
+    if (media >= 7) {
+        return "Aprovado";
+    } else if (media >= 5 && media < 7){
+        return "Recuperação";
+    } else if (media < 5) {
+        return "reprovado";
+    }
+}
+
+function descobrirMaiorNota(){
+    
+}
+
+console.log("A media de nota foi de",media);
+console.log("O status do aluno é", resultado);
+console.log("A nota mais alta foi ")
